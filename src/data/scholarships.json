@@ -1,0 +1,436 @@
+[
+  {
+    "id": "post_matric_sc",
+    "name": "Post-Matric Scholarship for SC Students",
+    "description": "Central government scholarship for Scheduled Caste students pursuing post-matriculation or post-secondary education.",
+    "income_limit": 250000,
+    "category": ["SC"],
+    "education_level": ["Class 11", "Class 12", "Undergraduate", "Postgraduate"],
+    "deadline": "31 October 2026",
+    "link": "https://scholarships.gov.in",
+    "documents": [
+      "Aadhaar Card & NSP OTR (One Time Registration) Number",
+      "SC Caste Certificate issued by competent revenue authority",
+      "Annual Income Certificate (family income ≤ ₹2,50,000)",
+      "Class 10 / Previous Qualifying Examination Marksheet",
+      "Current Year College Admission Letter & Tuition Fee Receipt",
+      "Aadhaar-seeded Bank Account Passbook (first page with IFSC)"
+    ]
+  },
+  {
+    "id": "pre_matric_sc",
+    "name": "Pre-Matric Scholarship for SC Students",
+    "description": "Financial support for SC students studying in Classes 9 and 10 to prevent dropouts.",
+    "income_limit": 250000,
+    "category": ["SC"],
+    "education_level": ["Class 6-10"],
+    "deadline": "30 September 2026",
+    "link": "https://scholarships.gov.in",
+    "documents": [
+      "Aadhaar Card of the Student",
+      "SC Caste Certificate of Father / Student",
+      "Income Certificate (family income ≤ ₹2,50,000)",
+      "Previous Class Report Card / Marksheet",
+      "School Bonafide / Enrollment Certificate from Principal",
+      "Bank Account Passbook (joint account with parent or self)"
+    ]
+  },
+  {
+    "id": "obc_pre_matric",
+    "name": "Pre-Matric Scholarship for OBC Students",
+    "description": "Financial assistance for OBC students studying in Class 1 to Class 10 to reduce dropout rates.",
+    "income_limit": 200000,
+    "category": ["OBC"],
+    "education_level": ["Class 1-5", "Class 6-10"],
+    "deadline": "30 November 2026",
+    "link": "https://scholarships.gov.in",
+    "documents": [
+      "Aadhaar Card of Student",
+      "OBC Community Certificate",
+      "Annual Income Certificate (family income ≤ ₹2,00,000)",
+      "School Bonafide / Admission Certificate",
+      "Previous Academic Year Marksheet",
+      "Active Bank Account Passbook"
+    ]
+  },
+  {
+    "id": "obc_post_matric",
+    "name": "Post-Matric Scholarship for OBC Students",
+    "description": "Support for OBC students pursuing higher secondary and above education in recognised institutions.",
+    "income_limit": 100000,
+    "category": ["OBC"],
+    "education_level": ["Class 11", "Class 12", "Undergraduate", "Postgraduate"],
+    "deadline": "31 October 2026",
+    "link": "https://scholarships.gov.in",
+    "documents": [
+      "Aadhaar Card & NSP OTR Number",
+      "OBC Caste Certificate (Non-Creamy Layer)",
+      "Income Certificate from Tehsildar (≤ ₹1,00,000)",
+      "Previous Qualifying Examination Marksheet",
+      "College Bonafide Certificate & Fee Receipt",
+      "Aadhaar-seeded Bank Account Passbook"
+    ]
+  },
+  {
+    "id": "minority_merit",
+    "name": "Merit-cum-Means Scholarship for Minorities",
+    "description": "For meritorious students belonging to minority communities (Muslim, Christian, Sikh, Buddhist, Jain, Parsi) pursuing professional and technical courses.",
+    "income_limit": 250000,
+    "category": ["Minority"],
+    "education_level": ["Undergraduate", "Postgraduate"],
+    "deadline": "30 September 2026",
+    "link": "https://scholarships.gov.in",
+    "documents": [
+      "Aadhaar Card & NSP OTR Number",
+      "Minority Community Self-Declaration Certificate",
+      "Income Certificate (family income ≤ ₹2,50,000)",
+      "Class 12 or Graduation Marksheet (minimum 50% marks)",
+      "Admission Proof for Professional / Technical Course",
+      "College Fee Receipt & Bank Passbook"
+    ]
+  },
+  {
+    "id": "minority_pre_matric",
+    "name": "Pre-Matric Scholarship for Minorities",
+    "description": "Scholarship for minority community students in Classes 1 to 10 to support school education and reduce dropouts.",
+    "income_limit": 100000,
+    "category": ["Minority"],
+    "education_level": ["Class 1-5", "Class 6-10"],
+    "deadline": "30 September 2026",
+    "link": "https://scholarships.gov.in",
+    "documents": [
+      "Aadhaar Card of Student",
+      "Minority Community Self-Declaration Certificate",
+      "Income Certificate (≤ ₹1,00,000)",
+      "Previous Academic Year Marksheet (at least 50% marks)",
+      "School Bonafide Certificate",
+      "Bank Account Passbook"
+    ]
+  },
+  {
+    "id": "minority_post_matric",
+    "name": "Post-Matric Scholarship for Minorities",
+    "description": "Support for minority students pursuing Class 11 and above courses in government or private recognised institutions.",
+    "income_limit": 200000,
+    "category": ["Minority"],
+    "education_level": ["Class 11", "Class 12", "Undergraduate", "Postgraduate"],
+    "deadline": "31 October 2026",
+    "link": "https://scholarships.gov.in",
+    "documents": [
+      "Aadhaar Card & NSP OTR Number",
+      "Minority Community Declaration Certificate",
+      "Income Certificate (≤ ₹2,00,000)",
+      "Previous Qualifying Exam Marksheet (at least 50% marks)",
+      "Current Year College Admission / Fee Receipt",
+      "Aadhaar-seeded Bank Passbook"
+    ]
+  },
+  {
+    "id": "st_pre_matric",
+    "name": "Pre-Matric Scholarship for ST Students",
+    "description": "Scholarship for Scheduled Tribe students in Classes 9 and 10 with family income below the limit.",
+    "income_limit": 250000,
+    "category": ["ST"],
+    "education_level": ["Class 6-10"],
+    "deadline": "30 September 2026",
+    "link": "https://scholarships.gov.in",
+    "documents": [
+      "Aadhaar Card of Student",
+      "ST Tribe / Caste Certificate",
+      "Income Certificate (family income ≤ ₹2,50,000)",
+      "Previous Class Marksheet",
+      "School Bonafide Certificate",
+      "Bank Account Passbook"
+    ]
+  },
+  {
+    "id": "st_post_matric",
+    "name": "Post-Matric Scholarship for ST Students",
+    "description": "Central scholarship for Scheduled Tribe students pursuing post-matric education in recognised institutions.",
+    "income_limit": 250000,
+    "category": ["ST"],
+    "education_level": ["Class 11", "Class 12", "Undergraduate", "Postgraduate"],
+    "deadline": "31 October 2026",
+    "link": "https://scholarships.gov.in",
+    "documents": [
+      "Aadhaar Card & NSP OTR Number",
+      "ST Tribe Certificate from Revenue Department",
+      "Income Certificate (family income ≤ ₹2,50,000)",
+      "Class 10 / Qualifying Marksheet",
+      "College Admission Slip & Tuition Fee Receipt",
+      "Aadhaar-linked Bank Account Passbook"
+    ]
+  },
+  {
+    "id": "st_fellowship",
+    "name": "National Fellowship for ST Students (NFST)",
+    "description": "Fellowship for Scheduled Tribe students admitted to M.Phil and Ph.D programmes in recognised universities.",
+    "income_limit": 600000,
+    "category": ["ST"],
+    "education_level": ["Postgraduate", "Ph.D"],
+    "deadline": "31 December 2026",
+    "link": "https://scholarships.gov.in",
+    "documents": [
+      "Aadhaar Card",
+      "ST Certificate issued by competent authority",
+      "Income Certificate (≤ ₹6,00,000)",
+      "Postgraduate Degree Certificate & Marksheets",
+      "M.Phil / Ph.D Admission Letter & Joining Report from University",
+      "Research Supervisor & Head of Institution Recommendation Form"
+    ]
+  },
+  {
+    "id": "general_merit",
+    "name": "Central Sector Scheme of Scholarship (CSSS)",
+    "description": "Merit-based scholarship for students above 80th percentile in Class 12 board exams, open to all categories. Provides ₹10,000–₹20,000 per annum.",
+    "income_limit": 450000,
+    "category": ["General", "SC", "ST", "OBC", "Minority"],
+    "education_level": ["Undergraduate", "Postgraduate"],
+    "deadline": "31 October 2026",
+    "link": "https://scholarships.gov.in",
+    "documents": [
+      "Aadhaar Card & NSP OTR Number",
+      "Class 12 Board Exam Marksheet (verified top 80th percentile)",
+      "Income Certificate (family income ≤ ₹4,50,000)",
+      "College Admission Allotment Letter & Fee Receipt",
+      "Student Bank Account Passbook (Aadhaar linked)",
+      "Bonafide Certificate from College Principal / Dean"
+    ]
+  },
+  {
+    "id": "pm_scholarship",
+    "name": "PM Scholarship Scheme (PMSS) for Central Armed Police Forces",
+    "description": "For wards and widows of ex-servicemen and Central Armed Police Forces personnel. Provides ₹3,000/month (boys) and ₹3,600/month (girls).",
+    "income_limit": 600000,
+    "category": ["General", "SC", "ST", "OBC", "Minority"],
+    "education_level": ["Undergraduate", "Postgraduate"],
+    "deadline": "31 October 2026",
+    "link": "https://desw.gov.in",
+    "documents": [
+      "Aadhaar Card of Student",
+      "Class 12 / Diploma / Graduation Marksheet (Min. 60% marks)",
+      "Discharge Book / PPO Copy of Ex-Serviceman / CAPF Personnel",
+      "Bonafide Certificate from College / University",
+      "Annexure 1 & 2 signed by Competent Authority / Zila Sainik Board",
+      "Bank Account Passbook"
+    ]
+  },
+  {
+    "id": "top_class_obc",
+    "name": "Top Class Education for OBC/EBC/DNT Students",
+    "description": "Full tuition fee support for OBC/EBC/DNT students admitted to top listed institutions (IITs, NITs, IIMs, AIIMS, etc.).",
+    "income_limit": 250000,
+    "category": ["OBC"],
+    "education_level": ["Undergraduate", "Postgraduate"],
+    "deadline": "31 October 2026",
+    "link": "https://scholarships.gov.in",
+    "documents": [
+      "Aadhaar Card & NSP OTR Number",
+      "OBC / EBC / DNT Caste Certificate",
+      "Income Certificate (family income ≤ ₹2,50,000)",
+      "Allotment Letter from Listed Top Institution (IIT/NIT/IIM/AIIMS)",
+      "Institutional Fee Structure & Paid Receipt",
+      "Aadhaar-linked Bank Account Passbook"
+    ]
+  },
+  {
+    "id": "pwd_scholarship",
+    "name": "Pre-Matric & Post-Matric Scholarship for Students with Disabilities",
+    "description": "Financial support for differently-abled students (40%+ disability) pursuing education from Class 9 onwards.",
+    "income_limit": 250000,
+    "category": ["General", "SC", "ST", "OBC", "Minority"],
+    "education_level": ["Class 6-10", "Class 11", "Class 12", "Undergraduate", "Postgraduate"],
+    "deadline": "31 October 2026",
+    "link": "https://scholarships.gov.in",
+    "documents": [
+      "Aadhaar Card & NSP OTR Number",
+      "Disability Certificate / UDID Card (minimum 40% disability)",
+      "Income Certificate (family income ≤ ₹2,50,000)",
+      "Previous Academic Examination Marksheet",
+      "School / College Bonafide Certificate",
+      "Bank Account Passbook"
+    ]
+  },
+  {
+    "id": "egrantz_kerala_sc_st",
+    "name": "E-Grantz Scholarship (Kerala) — SC/ST",
+    "description": "Kerala state scholarship for SC and ST students. No income ceiling for SC/ST categories. Covers tuition, hostel, and maintenance.",
+    "income_limit": 9999999,
+    "category": ["SC", "ST"],
+    "education_level": ["Class 11", "Class 12", "Undergraduate", "Postgraduate", "Ph.D"],
+    "deadline": "31 December 2026",
+    "link": "https://egrantz.kerala.gov.in",
+    "documents": [
+      "Aadhaar Card of Student",
+      "Kerala Integrated Caste Certificate (SC/ST)",
+      "Nativity / Domicile Certificate of Kerala State",
+      "Qualifying Examination Marksheet (SSLC / Plus Two / Degree)",
+      "College Admission Allotment Memo & Fee Receipt",
+      "Bank Passbook (Aadhaar linked with minimum 75% attendance)"
+    ]
+  },
+  {
+    "id": "egrantz_kerala_obc",
+    "name": "E-Grantz Scholarship (Kerala) — OBC",
+    "description": "Kerala state scholarship for OBC students. Must be a permanent resident of Kerala with 75% minimum attendance.",
+    "income_limit": 100000,
+    "category": ["OBC"],
+    "education_level": ["Class 11", "Class 12", "Undergraduate", "Postgraduate"],
+    "deadline": "31 December 2026",
+    "link": "https://egrantz.kerala.gov.in",
+    "documents": [
+      "Aadhaar Card of Student",
+      "Kerala Community Certificate (OBC)",
+      "Income Certificate from Village Officer (family income ≤ ₹1,00,000)",
+      "Nativity / Residence Certificate of Kerala",
+      "College Allotment Memo & Fee Receipt",
+      "Bank Account Passbook (75% minimum attendance verified)"
+    ]
+  },
+  {
+    "id": "ch_muhammed_koya",
+    "name": "C.H. Muhammed Koya Scholarship (Kerala)",
+    "description": "For girl students from Muslim, Latin Catholic, and Converted Christian communities in Kerala. Must study in Govt/Aided institutions.",
+    "income_limit": 450000,
+    "category": ["Minority"],
+    "education_level": ["Class 11", "Class 12", "Undergraduate", "Postgraduate"],
+    "deadline": "30 November 2026",
+    "link": "https://minoritywelfare.kerala.gov.in",
+    "documents": [
+      "Aadhaar Card of Girl Student",
+      "Community Certificate (Muslim / Latin Catholic / Converted Christian)",
+      "Income Certificate from Village Officer (≤ ₹4,50,000)",
+      "Nativity Certificate of Kerala",
+      "College Admission Memo (Govt / Aided / Merit Seat in Self-Financing)",
+      "Qualifying Exam Marksheet (at least 50% marks)",
+      "Bank Passbook in Student's Name"
+    ]
+  },
+  {
+    "id": "suvarna_jubilee",
+    "name": "Suvarna Jubilee Merit Scholarship (Kerala)",
+    "description": "For BPL students in Govt/Aided colleges with at least 50% marks. Open to all categories.",
+    "income_limit": 100000,
+    "category": ["General", "SC", "ST", "OBC", "Minority"],
+    "education_level": ["Undergraduate", "Postgraduate"],
+    "deadline": "31 October 2026",
+    "link": "https://dcescholarship.kerala.gov.in",
+    "documents": [
+      "Aadhaar Card of Student",
+      "BPL Ration Card or BPL Certificate from Local Body",
+      "Nativity Certificate of Kerala",
+      "First Year Admission Allotment Memo in Govt/Aided College",
+      "Qualifying Examination Marksheet (minimum 50% marks)",
+      "Bank Account Passbook"
+    ]
+  },
+  {
+    "id": "national_means_merit",
+    "name": "National Means-cum-Merit Scholarship (NMMSS)",
+    "description": "For meritorious students from economically weaker families studying in Class 9 to 12. ₹12,000 per annum through PFMS.",
+    "income_limit": 350000,
+    "category": ["General", "SC", "ST", "OBC", "Minority"],
+    "education_level": ["Class 6-10", "Class 11", "Class 12"],
+    "deadline": "30 September 2026",
+    "link": "https://scholarships.gov.in",
+    "documents": [
+      "Aadhaar Card of Student",
+      "NMMSS Selection Examination Scorecard",
+      "Class 7 & 8 Marksheet (Min. 55% marks, 50% for SC/ST)",
+      "Income Certificate from competent authority (≤ ₹3,50,000)",
+      "Class 9 Admission Certificate in Government / Local Body / Aided School",
+      "Aadhaar-linked Bank Account Passbook"
+    ]
+  },
+  {
+    "id": "begum_hazrat_mahal",
+    "name": "Begum Hazrat Mahal National Scholarship for Minority Girls",
+    "description": "For girl students from minority communities (Muslim, Christian, Sikh, Buddhist, Jain, Parsi) in Classes 9 to 12 with at least 50% marks.",
+    "income_limit": 200000,
+    "category": ["Minority"],
+    "education_level": ["Class 6-10", "Class 11", "Class 12"],
+    "deadline": "30 September 2026",
+    "link": "https://www.maabordfoundation.com",
+    "documents": [
+      "Aadhaar Card of Girl Student",
+      "Minority Community Self-Declaration Certificate",
+      "Income Certificate (family income ≤ ₹2,00,000)",
+      "Previous Class Marksheet (at least 50% marks)",
+      "School Verification Certificate signed by Principal",
+      "Bank Account Passbook"
+    ]
+  },
+  {
+    "id": "aicte_pragati",
+    "name": "AICTE Pragati Scholarship for Girl Students",
+    "description": "Scheme aimed at providing assistance for advancement of girls pursuing technical education (Engineering/Diploma). ₹50,000 per annum.",
+    "income_limit": 800000,
+    "category": ["General", "SC", "ST", "OBC", "Minority"],
+    "education_level": ["Undergraduate", "Postgraduate"],
+    "deadline": "31 October 2026",
+    "link": "https://www.aicte-india.org",
+    "documents": [
+      "Aadhaar Card of Girl Student",
+      "Class 10 and Class 12 / ITI Marksheets",
+      "Centralized Admission Process (CAP) Allotment Letter to AICTE-approved Degree/Diploma",
+      "Income Certificate from Tehsildar (family income ≤ ₹8,00,000)",
+      "College Tuition Fee Paid Receipt",
+      "Director / Principal Bonafide Certificate",
+      "Bank Account Passbook"
+    ]
+  },
+  {
+    "id": "aicte_saksham",
+    "name": "AICTE Saksham Scholarship for Specially-Abled Students",
+    "description": "Financial support for specially-abled students with more than 40% disability admitted to AICTE approved technical degree/diploma programs.",
+    "income_limit": 800000,
+    "category": ["General", "SC", "ST", "OBC", "Minority"],
+    "education_level": ["Undergraduate", "Postgraduate"],
+    "deadline": "31 October 2026",
+    "link": "https://www.aicte-india.org",
+    "documents": [
+      "Aadhaar Card",
+      "Disability Certificate / UDID Card (minimum 40% disability)",
+      "Centralized Admission Allotment Letter to AICTE-approved Technical Program",
+      "Income Certificate (family income ≤ ₹8,00,000)",
+      "Tuition Fee Paid Receipt",
+      "College Principal Bonafide Certificate",
+      "Aadhaar-seeded Bank Passbook"
+    ]
+  },
+  {
+    "id": "lic_golden_jubilee",
+    "name": "LIC Golden Jubilee Scholarship Scheme",
+    "description": "Scholarship for economically weaker students pursuing higher studies in medicine, engineering, graduation or diploma courses.",
+    "income_limit": 250000,
+    "category": ["General", "SC", "ST", "OBC", "Minority"],
+    "education_level": ["Class 11", "Class 12", "Undergraduate", "Postgraduate"],
+    "deadline": "15 January 2027",
+    "link": "https://licindia.in",
+    "documents": [
+      "Aadhaar Card",
+      "Class 10 / 12 Marksheet (at least 60% marks)",
+      "Income Certificate from competent revenue officer (≤ ₹2,50,000)",
+      "Admission Letter & Fee Receipt for Higher Education / Professional Course",
+      "Address Proof & Passport-size Photograph",
+      "Cancelled Cheque or Bank Passbook copy"
+    ]
+  },
+  {
+    "id": "inspire_she",
+    "name": "INSPIRE Scholarship for Higher Education (SHE) - DST",
+    "description": "For top 1% meritorious students pursuing courses in Natural & Basic Sciences (B.Sc., B.S., Int. M.Sc./M.S.). ₹80,000 per annum.",
+    "income_limit": 1000000,
+    "category": ["General", "SC", "ST", "OBC", "Minority"],
+    "education_level": ["Undergraduate", "Postgraduate"],
+    "deadline": "30 November 2026",
+    "link": "https://online-inspire.gov.in",
+    "documents": [
+      "Aadhaar Card",
+      "Class 12 Marksheet showing Top 1% rank in State/Central Board (or JEE/NEET/KVPY rank card)",
+      "Admission Letter for B.Sc. / B.S. / Int. M.Sc. in Natural & Basic Sciences",
+      "Endorsement Certificate / Bonafide Form signed by College Principal / Registrar",
+      "State Bank of India (SBI) Bank Account Passbook (mandatory for DST DBT transfer)"
+    ]
+  }
+]

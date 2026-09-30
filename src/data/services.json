@@ -1,0 +1,270 @@
+[
+  {
+    "id": "ration_card",
+    "name": "Ration Card (NFSA / BPL / APL)",
+    "documents": [
+      "Aadhaar Cards of all family members",
+      "Address Proof (Electricity Bill / Water Bill / Rent Agreement)",
+      "Income Certificate from Tehsildar / Village Officer",
+      "Passport-size Photograph of Woman Head of Family",
+      "Bank Passbook (first page with IFSC & Account Number)",
+      "Surrender Certificate or Deletion Certificate (if moving from another card)"
+    ],
+    "fee": "Free",
+    "time": "15–30 days"
+  },
+  {
+    "id": "senior_citizen_card",
+    "name": "Senior Citizen Card (National / State)",
+    "documents": [
+      "Proof of Age 60+ (Aadhaar Card / Birth Certificate / School Leaving Certificate)",
+      "Proof of Residence (Voter ID / Utility Bill / Domicile Certificate)",
+      "Passport-size Photographs (3 copies)",
+      "Blood Group Report / Medical History Card",
+      "Emergency Contact & Next of Kin Details"
+    ],
+    "fee": "Free – ₹20 (varies by state portal)",
+    "time": "15–21 days"
+  },
+  {
+    "id": "old_age_pension",
+    "name": "Old Age Pension Scheme (IGNOAPS / National Social Assistance)",
+    "documents": [
+      "Aadhaar Card (linked to active mobile number)",
+      "Age Proof verifying 60+ years (Aadhaar / Voter ID / Birth Certificate)",
+      "BPL Ration Card or BPL Survey Inclusion Certificate",
+      "Bank / Post Office Account Passbook (Aadhaar seeded for DBT)",
+      "Domicile / Residence Certificate",
+      "Passport-size Photographs (2 copies)"
+    ],
+    "fee": "Free",
+    "time": "30–45 days"
+  },
+  {
+    "id": "ayushman_bharat",
+    "name": "Ayushman Bharat Health Card (PM-JAY Golden Card)",
+    "documents": [
+      "Aadhaar Card (mandatory for biometric e-KYC)",
+      "Ration Card or PM-JAY Eligibility Letter (Family ID)",
+      "Active Mobile Number (for OTP verification)",
+      "Income / Caste Certificate (if applying under state health welfare quota)"
+    ],
+    "fee": "Free at Government Centres / Empanelled Hospitals",
+    "time": "Instant download – 7 days"
+  },
+  {
+    "id": "pan_card",
+    "name": "PAN Card (New / Correction)",
+    "documents": [
+      "Aadhaar Card (fastest paperless e-KYC)",
+      "Proof of Date of Birth (Birth Certificate / Matriculation Marksheet / Passport)",
+      "Address Proof (Voter ID / Utility Bill / Bank Statement)",
+      "Passport-size Photographs (2 copies with white background)"
+    ],
+    "fee": "₹107 (Physical card within India) / Free (Instant e-PAN)",
+    "time": "Instant (e-PAN) / 10–15 days (Physical Card)"
+  },
+  {
+    "id": "aadhaar_update",
+    "name": "Aadhaar Update (Address, Mobile & Biometrics)",
+    "documents": [
+      "Original Aadhaar Card Number",
+      "Valid Address Proof (Utility Bill / Passport / Bank Statement / Rent Agreement)",
+      "Proof of Identity (for Name correction: Passport / PAN / Gazette Notification)",
+      "Proof of Date of Birth (Birth Certificate / School Transfer Certificate)",
+      "Active Mobile Number for OTP Verification"
+    ],
+    "fee": "₹50 (Demographic update) / ₹100 (Biometric update)",
+    "time": "7–15 days"
+  },
+  {
+    "id": "udid_disability",
+    "name": "Disability Certificate & UDID Card (Unique Disability ID)",
+    "documents": [
+      "Medical Assessment Report from District Hospital / Medical Board",
+      "Aadhaar Card or Photo Identity Proof",
+      "Address Proof (Domicile Certificate / Utility Bill / Voter ID)",
+      "Recent Colored Passport-size Photograph (white background)",
+      "Scanned Signature or Thumb Impression",
+      "Existing State Disability Certificate (if applying for renewal/digital UDID)"
+    ],
+    "fee": "Free",
+    "time": "15–30 days (after medical board examination)"
+  },
+  {
+    "id": "voter_id",
+    "name": "Voter ID Card (EPIC New Enrollment / Shift Address)",
+    "documents": [
+      "Aadhaar Card",
+      "Proof of Age (Birth Certificate / Aadhaar / Matriculation Certificate)",
+      "Address Proof (Electricity Bill / Water Bill / Passport / Bank Passbook)",
+      "Passport-size Photograph",
+      "Filled Form 6 (New voter) or Form 8 (Correction / Address shift)"
+    ],
+    "fee": "Free",
+    "time": "15–30 days"
+  },
+  {
+    "id": "income_certificate",
+    "name": "Income Certificate (Tehsildar / Revenue Department)",
+    "documents": [
+      "Aadhaar Card",
+      "Salary Slip / Form 16 / Income Tax Return / Self-declaration Affidavit",
+      "Ration Card or Family Register Copy",
+      "Address Proof (Utility Bill / Voter ID)",
+      "Agricultural Land Holding Documents (for rural / farmer families)",
+      "Passport-size Photograph"
+    ],
+    "fee": "Free – ₹50 (varies by state portal)",
+    "time": "7–15 days"
+  },
+  {
+    "id": "caste_certificate",
+    "name": "Caste / Community Certificate (SC / ST / OBC / EWS)",
+    "documents": [
+      "Aadhaar Card of Applicant",
+      "Father's / Blood Relative's Caste Certificate or School Leaving Certificate",
+      "Ration Card / Family Register showing applicant name",
+      "Land Record / Revenue Document mentioning ancestral community",
+      "Self-declaration Affidavit",
+      "Passport-size Photographs"
+    ],
+    "fee": "Free – ₹40 (state service charge)",
+    "time": "15–30 days"
+  },
+  {
+    "id": "domicile_certificate",
+    "name": "Domicile / Residence Certificate",
+    "documents": [
+      "Aadhaar Card",
+      "Proof of Continuous Residence for 3–5 years (Utility Bills / Rent Agreements)",
+      "School / College Leaving Certificate showing years of study in the state",
+      "Parents' Domicile Certificate or Land Ownership Proof",
+      "Voter ID / Ration Card",
+      "Passport-size Photograph"
+    ],
+    "fee": "₹15 – ₹50",
+    "time": "7–15 days"
+  },
+  {
+    "id": "legal_heir",
+    "name": "Legal Heir Certificate (Varisu Certificate)",
+    "documents": [
+      "Original Death Certificate of the Deceased",
+      "Aadhaar Cards of all surviving legal heirs (Spouse, Children, Parents)",
+      "Family Ration Card / Smart Card listing all family members",
+      "Sworn Affidavit on non-judicial stamp paper declaring all legal heirs",
+      "Marriage Certificate (for surviving spouse) or Birth Certificates (for children)",
+      "Service Book / Pension Order (if deceased was a government employee)"
+    ],
+    "fee": "₹20 – ₹200 (including stamp duty)",
+    "time": "15–30 days (post field inspection by Revenue Inspector)"
+  },
+  {
+    "id": "birth_certificate",
+    "name": "Birth Certificate Registration",
+    "documents": [
+      "Hospital Discharge Summary / Form 1 (Institutional Delivery Slip)",
+      "Parents' Aadhaar Cards",
+      "Parents' Marriage Certificate or Address Proof",
+      "Affidavit from Notary / Magistrate (if applying after 1 year of birth)",
+      "School Admission Record (for delayed registration)"
+    ],
+    "fee": "Free within 21 days / ₹20–₹50 late registration fee",
+    "time": "7–14 days"
+  },
+  {
+    "id": "death_certificate",
+    "name": "Death Certificate Registration",
+    "documents": [
+      "Hospital Death Summary / Medical Certification of Cause of Death",
+      "Cremation / Burial Ground Receipt",
+      "Aadhaar Card of the Deceased (for cancellation & record)",
+      "Aadhaar Card of Applicant / Nearest Relative",
+      "Address Proof of Deceased"
+    ],
+    "fee": "Free within 21 days / ₹20–₹50 late registration fee",
+    "time": "7–14 days"
+  },
+  {
+    "id": "pm_kisan",
+    "name": "PM Kisan Samman Nidhi (Registration & e-KYC)",
+    "documents": [
+      "Aadhaar Card (linked with mobile number for OTP)",
+      "Land Ownership Documents (Khatauni / Land Record / Patta copy)",
+      "Aadhaar-seeded Active Bank Account Passbook",
+      "Ration Card Number / Family Register Details"
+    ],
+    "fee": "Free (online) / ₹15 (biometric e-KYC at CSC)",
+    "time": "15–30 days (subject to state land record verification)"
+  },
+  {
+    "id": "eshram_card",
+    "name": "E-Shram Card (National Database of Unorganised Workers)",
+    "documents": [
+      "Aadhaar Card",
+      "Aadhaar-linked Mobile Number",
+      "Bank Account Number with IFSC Code",
+      "Occupation / Skill Details (Construction, Agriculture, Domestic, Gig Worker)",
+      "Age Proof verifying 16–59 years"
+    ],
+    "fee": "Free",
+    "time": "Instant (same day digital download)"
+  },
+  {
+    "id": "marriage_certificate",
+    "name": "Marriage Registration Certificate",
+    "documents": [
+      "Marriage Invitation Card or Religious Ceremony Certificate",
+      "Wedding Photographs (ceremony photo showing bride and groom)",
+      "Bride & Groom Age Proofs (Birth Certificate / Matriculation / Passport)",
+      "Bride & Groom Address Proofs (Aadhaar / Voter ID / Passport)",
+      "Identity Proof & Photos of 2 or 3 Witnesses present at marriage",
+      "Joint Affidavits in prescribed format"
+    ],
+    "fee": "₹100 – ₹500 (varies by Special / Hindu Marriage Act & state)",
+    "time": "15–30 days"
+  },
+  {
+    "id": "passport",
+    "name": "Passport (Fresh / Renewal — Seva Kendra)",
+    "documents": [
+      "Aadhaar Card (with correct Date of Birth and Address)",
+      "PAN Card or Voter ID",
+      "Proof of Date of Birth (Birth Certificate / Matriculation Certificate)",
+      "Address Proof (Bank Passbook / Electricity Bill / Telephone Bill)",
+      "Existing Old Passport (if applying for renewal / re-issue)",
+      "Non-ECR Proof (10th Standard or Higher Educational Qualification Certificate)"
+    ],
+    "fee": "₹1,500 (Normal 36 pages) / ₹2,000 (Normal 60 pages) / ₹3,500 (Tatkal)",
+    "time": "15–30 days (Normal) / 3–7 days (Tatkal)"
+  },
+  {
+    "id": "driving_licence",
+    "name": "Driving Licence (Learner's & Permanent)",
+    "documents": [
+      "Aadhaar Card / Voter ID for Identity & Address Proof",
+      "Age Proof (Birth Certificate / SSC Certificate / Passport)",
+      "Valid Learner's Licence Number",
+      "Medical Certificate (Form 1A signed by Registered Medical Practitioner)",
+      "Passport-size Photographs (3 copies)",
+      "Driving School Certificate (Form 5, if required for commercial vehicles)"
+    ],
+    "fee": "₹200 (Learner) / ₹700–₹1,000 (Permanent + Smart Card)",
+    "time": "7–15 days (after clearing driving test at RTO)"
+  },
+  {
+    "id": "lpg_ujjwala",
+    "name": "PM Ujjwala Yojana (Free LPG Gas Connection)",
+    "documents": [
+      "BPL Ration Card showing woman applicant's name",
+      "Aadhaar Card of Woman Head of Household (Age 18+)",
+      "Aadhaar Cards of all adult family members listed in ration card",
+      "Bank Account Passbook (Aadhaar linked for subsidy DBT)",
+      "Proof of Address (Aadhaar / Electricity Bill)",
+      "14-Point Declaration / Self-Affidavit on LPG distributor form"
+    ],
+    "fee": "Free (Security deposit & first cylinder covered by Govt)",
+    "time": "7–10 days"
+  }
+]

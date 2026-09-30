@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+/* ── Elderly-friendly base styles ── */
+:root {
+  --bg: #ffffff;
+  --fg: #111827;
+  --primary: #1d4ed8;
+  --primary-hover: #1e40af;
+  --accent: #059669;
+  --surface: #f8fafc;
+  --border: #d1d5db;
+  --input-bg: #ffffff;
+}
+
+.high-contrast {
+  --bg: #000000;
+  --fg: #ffffff;
+  --primary: #60a5fa;
+  --primary-hover: #93c5fd;
+  --accent: #34d399;
+  --surface: #111111;
+  --border: #666666;
+  --input-bg: #1a1a1a;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-size: 1.125rem; /* 18px base — easy to read */
+  line-height: 1.75;
+  transition: background-color 0.2s, color 0.2s;
+  min-height: 100vh;
+}
+
+.big-font {
+  font-size: 1.35rem; /* ~22px when toggled */
+}
+
+.big-font body,
+.big-font main,
+.big-font button,
+.big-font input,
+.big-font select,
+.big-font textarea {
+  font-size: 1.35rem !important;
+}
+
+/* Ensure focus rings are prominently visible for keyboard navigation */
+*:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 3px;
+}
+
+/* High contrast overrides for embedded cards & inputs */
+.high-contrast input,
+.high-contrast select,
+.high-contrast textarea {
+  background-color: #18181b !important;
+  color: #ffffff !important;
+  border-color: #71717a !important;
+}
+
+.high-contrast input::placeholder,
+.high-contrast textarea::placeholder {
+  color: #a1a1aa !important;
+}
+
+.high-contrast .bg-white {
+  background-color: #18181b !important;
+  color: #ffffff !important;
+}
+
+.high-contrast .text-gray-400,
+.high-contrast .text-gray-500,
+.high-contrast .text-gray-600,
+.high-contrast .text-gray-700 {
+  color: #e4e4e7 !important;
+}
+
+.high-contrast .bg-blue-50,
+.high-contrast .bg-green-50,
+.high-contrast .bg-red-50,
+.high-contrast .bg-orange-50 {
+  background-color: #18181b !important;
+  border-color: #52525b !important;
+}
+
+.high-contrast .text-blue-800,
+.high-contrast .text-green-800,
+.high-contrast .text-red-800 {
+  color: #ffffff !important;
+}
+
+.high-contrast .text-green-700 {
+  color: #4ade80 !important;
+}
+
+.high-contrast .text-red-700 {
+  color: #f87171 !important;
+}
