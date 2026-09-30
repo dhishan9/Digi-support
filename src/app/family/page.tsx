@@ -107,9 +107,9 @@ export default function FamilyPage() {
       </div>
 
       {/* ── Active Profile Quick Indicator ── */}
-      <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border-2 border-green-500 bg-green-50/80 px-5 py-4">
+      <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border-2 border-green-500 bg-green-50/80 px-5 py-4 animate-slide-down shadow-xs">
         <div className="flex items-center gap-3">
-          <span className="text-3xl">{activeMember.avatar}</span>
+          <span className="text-3xl animate-float">{activeMember.avatar}</span>
           <div>
             <div className="flex items-center gap-2">
               <span className="text-xs font-bold uppercase tracking-wider text-green-800 bg-green-200/80 px-2 py-0.5 rounded-full">
@@ -128,7 +128,7 @@ export default function FamilyPage() {
         <div className="flex gap-2">
           <Link
             href="/voice"
-            className="rounded-xl bg-[var(--primary)] px-4 py-2 text-sm font-bold text-white shadow hover:bg-[var(--primary-hover)] transition-colors cursor-pointer"
+            className="btn-tactile rounded-xl bg-[var(--primary)] px-4 py-2 text-sm font-bold text-white shadow hover:bg-[var(--primary-hover)] transition-colors cursor-pointer"
           >
             Fill Form for {activeMember.name.split(" ")[0]} →
           </Link>
@@ -143,7 +143,7 @@ export default function FamilyPage() {
           </h2>
           <button
             onClick={() => setShowAddModal(true)}
-            className="rounded-xl bg-blue-600 px-4 py-2.5 text-sm font-bold text-white shadow hover:bg-blue-700 transition-colors cursor-pointer flex items-center gap-1.5"
+            className="btn-tactile rounded-xl bg-blue-600 px-4 py-2.5 text-sm font-bold text-white shadow hover:bg-blue-700 transition-colors cursor-pointer flex items-center gap-1.5"
           >
             <span>+</span> Add Parent / Member
           </button>
@@ -155,10 +155,10 @@ export default function FamilyPage() {
             return (
               <div
                 key={m.id}
-                className={`flex flex-col justify-between rounded-2xl border-2 p-5 shadow-sm transition-all ${
+                className={`card-interactive flex flex-col justify-between rounded-2xl border-2 p-5 shadow-xs ${
                   isActive
                     ? "border-green-500 bg-green-50/40 ring-2 ring-green-400"
-                    : "border-[var(--border)] bg-[var(--surface)] hover:shadow-md"
+                    : "border-[var(--border)] bg-[var(--surface)] hover:border-blue-400"
                 }`}
               >
                 <div>

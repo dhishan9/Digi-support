@@ -213,10 +213,10 @@ export default function ChecklistPage() {
           <button
             key={s.id}
             onClick={() => selectService(s.id)}
-            className={`rounded-2xl border-2 p-5 text-left shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md cursor-pointer ${
+            className={`card-interactive rounded-2xl border-2 p-5 text-left shadow-sm cursor-pointer ${
               selectedId === s.id
                 ? "border-[var(--primary)] bg-blue-50 ring-2 ring-[var(--primary)]"
-                : "border-[var(--border)] bg-[var(--surface)]"
+                : "border-[var(--border)] bg-[var(--surface)] hover:border-blue-400"
             }`}
           >
             <h3 className="text-xl font-bold">{s.name}</h3>
@@ -239,7 +239,7 @@ export default function ChecklistPage() {
       {selected && (
         <section
           ref={detailRef}
-          className="scroll-mt-24 rounded-2xl border-2 border-[var(--primary)] bg-[var(--surface)] p-6 shadow-md"
+          className="scroll-mt-24 rounded-3xl border-2 border-[var(--primary)] bg-[var(--surface)] p-6 sm:p-8 shadow-lg animate-slide-down"
         >
           <div className="flex flex-wrap items-center justify-between gap-4">
             <h2 className="text-2xl font-extrabold text-[var(--primary)]">
@@ -277,7 +277,13 @@ export default function ChecklistPage() {
           <ul className="mt-3 space-y-3">
             {selected.documents.map((doc) => (
               <li key={doc}>
-                <label className="flex cursor-pointer items-center gap-3 rounded-xl border-2 border-[var(--border)] bg-white px-4 py-3.5 transition-colors hover:bg-gray-50">
+                <label
+                  className={`flex cursor-pointer items-center gap-3 rounded-2xl border-2 px-4 py-3.5 transition-all ${
+                    checked[doc]
+                      ? "border-green-400 bg-green-50/70 shadow-xs"
+                      : "border-[var(--border)] bg-white hover:bg-gray-50"
+                  }`}
+                >
                   <input
                     type="checkbox"
                     checked={checked[doc] ?? false}
@@ -285,14 +291,16 @@ export default function ChecklistPage() {
                     className="h-6 w-6 shrink-0 accent-[var(--primary)] cursor-pointer"
                   />
                   <span
-                    className={`text-lg select-none ${
-                      checked[doc] ? "text-green-700 line-through" : ""
+                    className={`text-lg select-none transition-all ${
+                      checked[doc] ? "text-green-800 line-through font-medium" : "text-gray-900"
                     }`}
                   >
                     {doc}
                   </span>
                   {checked[doc] && (
-                    <span className="ml-auto text-green-600 font-bold">✅ Ready</span>
+                    <span className="ml-auto text-green-700 font-extrabold animate-check-pop flex items-center gap-1">
+                      <span>✓</span> Ready
+                    </span>
                   )}
                 </label>
               </li>
@@ -300,12 +308,12 @@ export default function ChecklistPage() {
           </ul>
 
           {/* Progress summary */}
-          <div className="mt-5 rounded-xl border border-[var(--border)] bg-white p-4 text-lg font-semibold">
+          <div className="mt-5 rounded-2xl border border-[var(--border)] bg-white p-4 text-lg font-semibold">
             {selected.documents.filter((d) => checked[d]).length} /{" "}
             {selected.documents.length} documents ready
             {selected.documents.filter((d) => checked[d]).length ===
               selected.documents.length && (
-              <span className="ml-2 text-green-600">
+              <span className="ml-2 text-green-600 font-bold animate-fade-in">
                 🎉 All set! You&apos;re ready to apply.
               </span>
             )}
@@ -315,13 +323,13 @@ export default function ChecklistPage() {
           <div className="mt-5 flex flex-wrap gap-3">
             <button
               onClick={downloadPdf}
-              className="w-full sm:w-auto rounded-xl bg-[var(--primary)] px-6 py-3.5 text-lg font-bold text-white shadow transition-colors hover:bg-[var(--primary-hover)] cursor-pointer"
+              className="btn-tactile w-full sm:w-auto rounded-2xl bg-[var(--primary)] px-6 py-3.5 text-lg font-bold text-white shadow-sm hover:bg-[var(--primary-hover)] cursor-pointer"
             >
               📄 Download PDF Checklist
             </button>
             <button
               onClick={() => setSelectedId(null)}
-              className="w-full sm:w-auto rounded-xl border-2 border-[var(--border)] px-6 py-3.5 text-lg font-semibold hover:bg-gray-100 cursor-pointer"
+              className="btn-tactile w-full sm:w-auto rounded-2xl border-2 border-[var(--border)] px-6 py-3.5 text-lg font-semibold hover:bg-gray-100 cursor-pointer"
             >
               Close
             </button>

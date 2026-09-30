@@ -2,20 +2,30 @@ import Link from "next/link";
 
 export default function HomePage() {
   return (
-    <section className="flex flex-col items-center gap-8 py-12 text-center">
+    <section className="hero-glow-bg flex flex-col items-center gap-8 py-10 text-center animate-fade-in">
+      {/* Top Floating Badge */}
+      <div className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50/90 px-4 py-1.5 text-xs font-bold text-blue-900 shadow-2xs animate-float">
+        <span className="flex h-2 w-2 rounded-full bg-blue-600 animate-pulse" />
+        <span>Accessibility First • Family Helper Mode • NSS Digi‑Mitra</span>
+      </div>
+
       {/* Hero */}
-      <h1 className="text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">
-        Welcome to{" "}
-        <span className="text-[var(--primary)]">Digi‑Support</span>
-      </h1>
-      <p className="max-w-2xl text-xl text-gray-600">
-        Your one‑stop assistant for government service registration, scholarship
-        eligibility, and voice‑powered form filling — designed for everyone,
-        especially senior citizens.
-      </p>
+      <div className="max-w-3xl space-y-4 animate-fade-in-up">
+        <h1 className="text-4xl font-black leading-tight tracking-tight sm:text-5xl text-gray-900">
+          Welcome to{" "}
+          <span className="bg-linear-to-r from-blue-700 via-indigo-600 to-blue-500 bg-clip-text text-transparent">
+            Digi‑Support
+          </span>
+        </h1>
+        <p className="mx-auto max-w-2xl text-lg sm:text-xl text-gray-600 leading-relaxed">
+          Your one‑stop assistant for government welfare registration, scholarship
+          eligibility, and voice‑powered form filling — designed for everyone,
+          especially senior citizens and families.
+        </p>
+      </div>
 
       {/* Quick‑action cards */}
-      <div className="mt-4 grid w-full max-w-4xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-2 grid w-full max-w-4xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <Card
           href="/checklist"
           emoji="📋"
@@ -49,9 +59,9 @@ export default function HomePage() {
       </div>
 
       {/* Volunteer & NSS Highlight Banner */}
-      <div className="mt-4 flex w-full max-w-4xl flex-col items-center justify-between gap-4 rounded-3xl border-2 border-amber-300 bg-amber-50/70 p-6 text-left sm:flex-row shadow-xs">
+      <div className="card-interactive mt-4 flex w-full max-w-4xl flex-col items-center justify-between gap-4 rounded-3xl border-2 border-amber-300 bg-linear-to-r from-amber-50/90 to-orange-50/90 p-6 text-left sm:flex-row shadow-sm">
         <div className="flex items-center gap-4">
-          <span className="text-4xl">🤝🎓</span>
+          <span className="text-4xl animate-float">🤝🎓</span>
           <div>
             <h3 className="text-lg font-bold text-amber-950">
               Assisted by Volunteers: College Students & NSS / NCC Seva
@@ -64,7 +74,7 @@ export default function HomePage() {
         </div>
         <Link
           href="/volunteer"
-          className="shrink-0 rounded-2xl bg-amber-600 px-5 py-3 font-extrabold text-white shadow-xs hover:bg-amber-700 transition-colors"
+          className="btn-tactile shrink-0 rounded-2xl bg-amber-600 px-5 py-3 font-extrabold text-white shadow-sm hover:bg-amber-700 transition-colors"
         >
           Open Volunteer Portal ↗
         </Link>
@@ -88,13 +98,15 @@ function Card({
   return (
     <Link
       href={href}
-      className="group flex flex-col items-center gap-3 rounded-2xl border-2 border-[var(--border)] bg-[var(--surface)] p-6 text-center shadow-sm transition-all hover:-translate-y-1 hover:shadow-md"
+      className="card-interactive group flex flex-col items-center gap-3 rounded-3xl border-2 border-[var(--border)] bg-[var(--surface)] p-6 text-center shadow-xs hover:border-blue-400"
     >
-      <span className="text-5xl">{emoji}</span>
-      <h2 className="text-2xl font-bold text-[var(--primary)] group-hover:underline">
+      <span className="text-5xl transition-transform duration-300 ease-out group-hover:scale-120 group-hover:-translate-y-1">
+        {emoji}
+      </span>
+      <h2 className="text-2xl font-black text-[var(--primary)] group-hover:text-blue-700">
         {title}
       </h2>
-      <p className="text-base text-gray-500">{desc}</p>
+      <p className="text-sm text-gray-500 leading-normal">{desc}</p>
     </Link>
   );
 }

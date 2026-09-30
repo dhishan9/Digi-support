@@ -202,7 +202,7 @@ export default function VolunteerPage() {
               <div className="flex flex-col sm:flex-row items-center gap-3">
                 <button
                   onClick={downloadCertificate}
-                  className="w-full sm:w-auto flex items-center justify-center gap-2 rounded-2xl bg-amber-500 hover:bg-amber-600 text-white font-extrabold px-5 py-3 shadow-sm hover:shadow-md transition-all cursor-pointer"
+                  className="btn-tactile w-full sm:w-auto flex items-center justify-center gap-2 rounded-2xl bg-amber-500 hover:bg-amber-600 text-white font-extrabold px-5 py-3 shadow-sm hover:shadow-md cursor-pointer"
                   title="Generate accredited PDF certificate with digital seal"
                 >
                   <span>📜</span>
@@ -316,12 +316,12 @@ export default function VolunteerPage() {
                 return (
                   <div
                     key={req.id}
-                    className={`rounded-2xl border-2 p-5 transition-all flex flex-col justify-between ${
+                    className={`card-interactive rounded-2xl border-2 p-5 flex flex-col justify-between ${
                       req.status === "completed"
                         ? "border-green-200 bg-green-50/40"
                         : req.status === "in_progress"
                         ? "border-blue-300 bg-blue-50/40 ring-1 ring-blue-300"
-                        : "border-[var(--border)] bg-white hover:border-blue-400 hover:shadow-xs"
+                        : "border-[var(--border)] bg-white hover:border-blue-400"
                     }`}
                   >
                     <div>
@@ -726,8 +726,8 @@ export default function VolunteerPage() {
           CO-PILOT ASSISTANCE MODAL (FOR VOLUNTEERS)
       ═══════════════════════════════════════════════════════════════════════ */}
       {coPilotOpen && activeAssistRequest && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4 backdrop-blur-xs">
-          <div className="max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border-2 border-blue-300 bg-white p-6 sm:p-8 shadow-2xl">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4 backdrop-blur-md animate-fade-in">
+          <div className="max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border-2 border-blue-300 bg-white p-6 sm:p-8 shadow-2xl animate-slide-down">
             {/* Modal Header */}
             <div className="flex items-center justify-between border-b border-gray-200 pb-4">
               <div className="flex items-center gap-3">

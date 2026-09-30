@@ -608,7 +608,7 @@ export default function VoiceAIPage() {
             {messages.map((m) => (
               <div
                 key={m.id}
-                className={`flex gap-3 ${
+                className={`flex gap-3 animate-slide-down ${
                   m.role === "user" ? "justify-end" : "justify-start"
                 }`}
               >
@@ -618,7 +618,7 @@ export default function VoiceAIPage() {
                   </div>
                 )}
                 <div
-                  className={`max-w-[82%] rounded-2xl p-4 text-base shadow-xs leading-relaxed ${
+                  className={`max-w-[82%] rounded-2xl p-4 text-base shadow-xs leading-relaxed transition-all ${
                     m.role === "user"
                       ? "bg-[var(--primary)] text-white rounded-tr-none font-medium"
                       : "bg-white border-2 border-[var(--border)] text-[var(--fg)] rounded-tl-none"
@@ -695,9 +695,9 @@ export default function VoiceAIPage() {
                 type="button"
                 onClick={toggleSpeechRecognition}
                 disabled={!speechSupported || isGenerating}
-                className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-xl text-xl font-bold transition-all cursor-pointer ${
+                className={`btn-tactile flex h-12 w-12 shrink-0 items-center justify-center rounded-xl text-xl font-bold transition-all cursor-pointer ${
                   isListening
-                    ? "bg-red-600 text-white animate-pulse ring-4 ring-red-200"
+                    ? "bg-red-600 text-white animate-listening-wave ring-4 ring-red-300 shadow-md"
                     : "bg-blue-50 text-[var(--primary)] border-2 border-blue-200 hover:bg-blue-100"
                 } disabled:opacity-40 disabled:cursor-not-allowed`}
                 title={isListening ? "Stop Recording" : "Speak using Microphone"}
@@ -720,7 +720,7 @@ export default function VoiceAIPage() {
               <button
                 type="submit"
                 disabled={!inputText.trim() || isGenerating}
-                className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--primary)] text-white text-lg font-bold shadow hover:bg-[var(--primary-hover)] transition-colors disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer"
+                className="btn-tactile flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-[var(--primary)] text-white text-lg font-bold shadow hover:bg-[var(--primary-hover)] transition-colors disabled:opacity-40 disabled:cursor-not-allowed cursor-pointer"
                 title="Send message"
                 aria-label="Send message"
               >

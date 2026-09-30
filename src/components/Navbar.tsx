@@ -45,13 +45,13 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="sticky top-0 z-50 border-b-2 border-[var(--border)] bg-[var(--surface)] shadow-sm">
+    <nav className="sticky top-0 z-50 border-b-2 border-[var(--border)] glass-surface shadow-xs">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
         {/* Brand */}
         <div className="flex items-center gap-3">
           <Link
             href="/"
-            className="text-2xl font-extrabold tracking-tight text-[var(--primary)] hover:opacity-90"
+            className="text-2xl font-black tracking-tight text-[var(--primary)] hover:opacity-90 transition-opacity"
           >
             Digi‑Support
           </Link>
@@ -60,7 +60,7 @@ export default function Navbar() {
           <div className="relative hidden md:block">
             <button
               onClick={() => setProfileDropdownOpen(!profileDropdownOpen)}
-              className="flex items-center gap-1.5 rounded-full border border-blue-300 bg-blue-50 px-3 py-1 text-xs font-bold text-blue-900 hover:bg-blue-100 transition-colors cursor-pointer"
+              className="btn-tactile flex items-center gap-1.5 rounded-full border border-blue-300 bg-blue-50 px-3 py-1 text-xs font-bold text-blue-900 hover:bg-blue-100 transition-colors cursor-pointer shadow-2xs"
               title="Click to switch profile in Helper Mode"
             >
               <span>{activeMember.avatar}</span>
@@ -70,7 +70,7 @@ export default function Navbar() {
 
             {/* Profile Dropdown */}
             {profileDropdownOpen && (
-              <div className="absolute left-0 mt-2 w-56 rounded-2xl border-2 border-[var(--border)] bg-white p-2 shadow-xl z-50">
+              <div className="absolute left-0 mt-2 w-56 rounded-2xl border-2 border-[var(--border)] bg-white p-2 shadow-xl z-50 animate-slide-down">
                 <div className="px-2 py-1 text-[11px] font-extrabold uppercase tracking-wider text-gray-400">
                   Switch Active Profile
                 </div>
@@ -186,7 +186,7 @@ export default function Navbar() {
           {/* Desktop Accessibility toggle */}
           <button
             onClick={toggleAccessibility}
-            className={`hidden sm:inline-block sm:ml-2 rounded-lg border-2 px-3 py-2 text-base font-semibold transition-colors cursor-pointer ${
+            className={`btn-tactile hidden sm:inline-block sm:ml-2 rounded-lg border-2 px-3 py-2 text-base font-semibold transition-colors cursor-pointer ${
               a11yOn
                 ? "border-[var(--primary)] bg-[var(--primary)] text-white"
                 : "border-[var(--border)] text-[var(--fg)] hover:bg-[var(--primary)] hover:text-white"

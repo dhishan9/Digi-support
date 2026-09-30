@@ -111,23 +111,23 @@ export default function ScholarshipsPage() {
     return (
       <div
         key={s.id}
-        className={`flex flex-col w-full rounded-2xl border-2 p-5 shadow-sm transition-all ${
+        className={`card-interactive flex flex-col w-full rounded-2xl border-2 p-5 shadow-xs ${
           s.eligible === true
-            ? "border-green-500 bg-green-50"
+            ? "border-green-500 bg-green-50/70"
             : s.eligible === false
-              ? "border-red-300 bg-red-50 opacity-90"
-              : "border-[var(--border)] bg-[var(--surface)]"
+              ? "border-red-300 bg-red-50/60 opacity-90"
+              : "border-[var(--border)] bg-[var(--surface)] hover:border-blue-400"
         }`}
       >
         <div>
           {/* Badge */}
           <div className="mb-2">
             {s.eligible === true ? (
-              <span className="inline-block rounded-full bg-green-600 px-3 py-1 text-sm font-bold text-white">
+              <span className="inline-block rounded-full bg-green-600 px-3 py-1 text-sm font-bold text-white shadow-2xs animate-fade-in">
                 Eligible ✅
               </span>
             ) : s.eligible === false ? (
-              <span className="inline-block rounded-full bg-red-600 px-3 py-1 text-sm font-bold text-white">
+              <span className="inline-block rounded-full bg-red-600 px-3 py-1 text-sm font-bold text-white shadow-2xs animate-fade-in">
                 Not Eligible ❌
               </span>
             ) : (
@@ -171,7 +171,7 @@ export default function ScholarshipsPage() {
         <div className="mt-5 pt-3 border-t border-[var(--border)]">
           <button
             onClick={() => toggleDetails(s.id)}
-            className={`w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl px-5 py-2.5 text-base font-bold shadow transition-colors cursor-pointer ${
+            className={`btn-tactile w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl px-5 py-2.5 text-base font-bold shadow-xs cursor-pointer ${
               isExpanded
                 ? "bg-gray-800 text-white hover:bg-black"
                 : s.eligible === true
